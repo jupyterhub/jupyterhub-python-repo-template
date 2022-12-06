@@ -1,1 +1,1 @@
-# jupyterhub-repo-template
+# jupyterhub-python-repo-template
