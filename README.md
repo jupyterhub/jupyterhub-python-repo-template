@@ -7,7 +7,7 @@
 
 This is a repository that contains a set of example files that, after tailoring, can be used to create GitHub repositories for new JupyterHub Python projects.
 
-*NOTE:* The badges above 🔝 can and should also be configured for the new project you intend to create. This will make it be consistent with the rest of the respositories in the [jupyterhub organization](https://github.com/jupyterhub). Just replace any reference to this repository `jupyterhub-python-repo-template` with your project and the proper links the badges should point to.
+*NOTE: The badges above 🔝 can and should also be configured for the new project you intend to create. This will make it be consistent with the rest of the respositories in the [jupyterhub organization](https://github.com/jupyterhub). Just replace any reference to this repository `jupyterhub-python-repo-template` with your project and the proper links the badges should point to.*
 
 ## How to use this repository
 
