@@ -1,9 +1,9 @@
-# --- How to change this fie ---
-# 1. Search and replace `jupyterhub-python-repo-template` with the name of your repository
-# 2. Update the [project] section with details about your project,
-#    paying attention to the [project.dependencies] part and
-#    list and pin the packages version that your project depends on
-# 3. Update the [project.optional-dependencies.test] with the pkg needed to run the tests
+# --- MUST ADAPT THIS FILE FOR YOUR PROJECT ---
+# --- Instructions below ---
+#
+# * Search and replace `jupyterhub-python-repo-template` with the name of your repository
+# * Search after the `TODO` keyword and follow the intructions in the comment
+
 
 # build-system
 # - ref: https://peps.python.org/pep-0517/
@@ -18,11 +18,15 @@ build-backend = "hatchling.build"
 # - ref 2: https://hatch.pypa.io/latest/config/metadata/#project-metadata
 #
 [project]
+# TODO: Change the name below with the name of your project
 name = "jupyterhub-python-repo-template"
+# TODO: Change the description below with a description of your project
 description = "JupyterHub Python repository template"
 readme = "README.md"
+# TODO: Change the Python version below with the one relevant to your project
 requires-python = ">=3.8"
 license = {file = "LICENSE"}
+# TODO: Add more keywords to the list that are relevant to your project
 keywords = ["jupyterhub"]
 authors = [
     {name = "Jupyter Contributors", email = "jupyter@googlegroups.com"},
@@ -31,6 +35,7 @@ classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Programming Language :: Python :: 3",
 ]
+# TODO: List the packages and pin them to a version that your project depends on
 dependencies = [
     # NOTE: If lower bounds are updated, also update our test for the lower
     #       bounds in .github/workflows/test.yaml.
@@ -38,6 +43,7 @@ dependencies = [
 ]
 dynamic = ["version"]
 
+# TODO: List the packages and pin them to a version that the tests in your project depend on
 [project.optional-dependencies]
 test = [
     "pytest>=5.4",
@@ -60,7 +66,6 @@ skip-string-normalization = true
 # target-version should be all supported versions, see
 # https://github.com/psf/black/issues/751#issuecomment-473066811
 target_version = [
-    "py37",
     "py38",
     "py39",
     "py310",
