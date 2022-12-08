@@ -1,5 +1,10 @@
 # jupyterhub-python-repo-template
 
+[![Documentation status](https://img.shields.io/readthedocs/jupyterhub-python-repo-template?logo=read-the-docs)](https://jupyterhub-python-repo-template.readthedocs.io/en/latest/?badge=latest)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jupyterhub/jupyterhub-python-repo-template/Test?logo=github)](https://github.com/jupyterhub/jupyterhub-python-repo-template/actions)
+[![Code coverage](https://codecov.io/gh/jupyterhub/jupyterhub-python-repo-template/branch/main/graph/badge.svg)](https://codecov.io/gh/jupyterhub/jupyterhub-python-repo-template)
+[![](https://img.shields.io/pypi/v/jupyterhub-python-repo-template.svg?logo=pypi)](https://pypi.python.org/pypi/jupyterhub-kubespawner)
+
 This is a repository that contains a set of example files that, after tailoring, can be used to create GitHub repositories for new JupyterHub Python projects.
 
 ## How to use this repository
