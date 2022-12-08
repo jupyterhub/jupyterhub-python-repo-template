@@ -5,13 +5,18 @@
 [![Code coverage](https://codecov.io/gh/jupyterhub/jupyterhub-python-repo-template/branch/main/graph/badge.svg)](https://codecov.io/gh/jupyterhub/jupyterhub-python-repo-template)
 [![](https://img.shields.io/pypi/v/jupyterhub-python-repo-template.svg?logo=pypi)](https://pypi.python.org/pypi/jupyterhub-kubespawner)
 
+---
+**NOTE**
+
+The badges above ⤴ can and should also be configured for the new project you intend to create. This will make it be consistent with the rest of the respositories in the [jupyterhub organization](https://github.com/jupyterhub).
+---
+
 This is a repository that contains a set of example files that, after tailoring, can be used to create GitHub repositories for new JupyterHub Python projects.
 
 ## How to use this repository
 
 
-
-## Repository contents
+## 📚 Repository contents
 
 This section describes the various files in this repository and how to modify them for your new project.
 
