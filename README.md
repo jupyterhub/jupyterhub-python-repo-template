@@ -23,36 +23,28 @@ You can either:
 - directly copy just the content of the files you want and change them to match your project.
 
 ## 📚 Repository contents
-
 This section describes the various files in this repository and how to modify them for your new project.
 
 ### Files that don't need changes
-
-Some of the files in this repository can be used in a new project, just as they in this repository,
-without needing to change anything.
-The list of files in this category is the following:
+The files in this list can be used in a new project, just as they are, without changing their content.
 
 - `SECURITY.md`
 - `LICENSE`
 - `CODE-OF-CONDUCT.md`
 
-### Files that need straightforward, minimal modifications:
+### Files that need to be adapted
+The files in this section will need to be adapted to match your project's specifics.
 
-The changes to following files should be pretty straighforward.
-They should only require project specific additions or removals.
+#### Files that need straightforward, minimal modifications
+The changes that need to be done to the following files should be pretty straighforward,
+as, they should only require project specific additions or removals.
 
 - `docs/source/_static_/images/logo`
 - `pre-commit-config.yaml`
 - `MANIFEST.in`
 - `.readthedocs.yaml`
 
-### Files needing more complex changes
-
-TODO
-
-#### Files in the root of the repository
-
-1. `pyproject.toml`
+#### `pyproject.toml`
 
 Contains the [Hatch](https://hatch.pypa.io/latest/) build system requirements and information,
 which will be used by pip to build the package.
