@@ -9,12 +9,14 @@
 **NOTE**
 
 The badges above ⤴ can and should also be configured for the new project you intend to create. This will make it be consistent with the rest of the respositories in the [jupyterhub organization](https://github.com/jupyterhub).
+
 ---
 
 This is a repository that contains a set of example files that, after tailoring, can be used to create GitHub repositories for new JupyterHub Python projects.
 
 ## How to use this repository
 
+You can either use the green button 🟩 that says `"Use this template"`
 
 ## 📚 Repository contents
 
@@ -53,7 +55,7 @@ There are detailed instructions just at the start of the file,
 about how to proper adapt this file to your own project.
 Please follow them.
 
-#### Files in the docs directory
+#### The docs directory
 
 
-#### Files in the tests directory
+#### The tests directory
