@@ -4,6 +4,7 @@
 #
 # * Search and replace `jupyterhub-python-repo-template` with the name of your
 #   repository
+# * Search after the `TODO` keyword and follow the instructions in the comment
 # ----------------------------------------------------------------------------
 
 # Configuration file for the Sphinx documentation builder.
@@ -42,6 +43,7 @@ default_role = "literal"
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
+# TODO add more extensions based on needs here
 extensions = [
     "autodoc_traits",
     "sphinx_copybutton",
@@ -60,7 +62,7 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 root_doc = master_doc = "index"
 
 # The suffix(es) of source filenames.
-source_suffix = [".md", ".rst"]
+source_suffix = [".md"]
 
 # -- Options for HTML output -------------------------------------------------
 # ref: https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
@@ -69,6 +71,7 @@ source_suffix = [".md", ".rst"]
 # a list of builtin themes.
 #
 
+# TODO: Consider updating the following section with the desired html theme if needed
 html_theme = "pydata_sphinx_theme"
 html_theme_options = {
     "github_url": "https://github.com/jupyterhub/jupyterhub-python-repo-template/",
@@ -95,4 +98,6 @@ html_static_path = ["_static"]
 # A list of regular expressions that match anchors Sphinx should skip when checking
 # the validity of anchors in links.
 
+# TODO: Consider adding links that are known to fail from time to time to the list below
+#       so that they are skipped from validation
 linkcheck_ignore = []
