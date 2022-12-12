@@ -7,9 +7,15 @@ The `jupyterhub-python-repo-template` repository, is a repository that contains 
 ```{toctree}
 :maxdepth: 2
 :caption: Contents
-
 docs
+```
+
+```{toctree}
+:maxdepth: 2
+:caption: Reference
+changelog
+```
+
 <!-- testing -->
 <!-- packaging -->
 <!-- misc -->
-```
