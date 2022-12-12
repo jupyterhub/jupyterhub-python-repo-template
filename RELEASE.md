@@ -1,6 +1,8 @@
 <!---
-# --- How to change this fie ---
-# 1. Search and replace `jupyterhub-python-repo-template` with the name of your repository
+# --- MUST ADAPT THIS FILE FOR YOUR PROJECT ---
+# --- Instructions below ---
+#
+# * Search and replace `jupyterhub-python-repo-template` with the name of your repository
 --->
 
 # How to make a release
