@@ -43,6 +43,7 @@ default_role = "literal"
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    "autodoc_traits",
     "sphinx_copybutton",
     "myst_parser",
 ]
