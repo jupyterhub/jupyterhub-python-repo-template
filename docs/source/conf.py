@@ -1,3 +1,11 @@
+# ----------------------------------------------------------------------------
+#  --- MUST ADAPT THIS FILE FOR YOUR PROJECT ---
+# --- Instructions below ---
+#
+# * Search and replace `jupyterhub-python-repo-template` with the name of your
+#   repository
+# ----------------------------------------------------------------------------
+
 # Configuration file for the Sphinx documentation builder.
 #
 # This file only contains a selection of the most common options. For a full
