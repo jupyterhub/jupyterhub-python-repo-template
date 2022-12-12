@@ -8,6 +8,7 @@ The `docs` directory contains configuration files that are generally used across
 
 The `docs` directory usually has the overall structure described below.
 
+```
 📦docs
  ┣ 📂source
  ┃ ┣ 📂_static
@@ -22,6 +23,7 @@ The `docs` directory usually has the overall structure described below.
  ┣ 📜Makefile
  ┣ 📜make.bat
  ┗ 📜requirements.txt
+```
 
 ```{warning}
 The following files, `conf.py`, `Makefile`, `make.bat` assume the structure above.
