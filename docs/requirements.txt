@@ -10,4 +10,5 @@ autodoc-traits
 myst-parser
 pydata-sphinx-theme
 sphinx
+sphinx-autobuild
 sphinx-copybutton
