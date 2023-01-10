@@ -21,13 +21,14 @@ These are the instructions on how to make a release.
    continue to step 2 **only when its merged.**
 
    Tips about getting the most out of github-activity (from https://github.com/jupyterhub/team-compass/issues/563):
+
    - [ ] Run `github-activity --heading-level=3`
    - [ ] Consider labelling PRs:
-     - Read the output of `github-activity` and look for PRs under the uncategorized heading 
-      that didn't have a label for `github-activity` to sort it by.
+     - Read the output of `github-activity` and look for PRs under the uncategorized heading
+       that didn't have a label for `github-activity` to sort it by.
      - If any non-bot authored PRs are found there, visit them and add a relevant label.
      - `github-activity` can't sort `ci` labels automatically to go under a `### Continuous integration` improvements heading,
-      so these need ot handeled manually.
+       so these need ot handeled manually.
    - [ ] Cosider updating PR title:
      - Read the output of `github-activity` and look for PRs with a title that can be improved,
        then update the title of the PR on GitHub.
@@ -38,11 +39,11 @@ These are the instructions on how to make a release.
          If a major version bump is made, also write some summary manually before listing all the PRs.
        - Bump minor version if an enhancement or new feature is added
        - Bump patch version if only documentation and bugfixes etc are provided.
-      - Add a date to the release that seems likely to match when it can get merged
-      - Remove various pre-commit PRs and dependabot PRs that just bumps CI stuff.
-      - Remove various @welcome, @dependabot, and other bots from contributors lists etc
-      - Put ci labelled PRs manually under `### Continuous integration` improvements heading
-   - [ ] Make a commit with a message similar to *"Add changelog for 1.2.3"* and open a PR titled the same
+     - Add a date to the release that seems likely to match when it can get merged
+     - Remove various pre-commit PRs and dependabot PRs that just bumps CI stuff.
+     - Remove various @welcome, @dependabot, and other bots from contributors lists etc
+     - Put ci labelled PRs manually under `### Continuous integration` improvements heading
+   - [ ] Make a commit with a message similar to _"Add changelog for 1.2.3"_ and open a PR titled the same
    - [ ] Await merge, then move on to step 2 described below
 
 1. Checkout main and make sure it is up to date.
@@ -55,6 +56,7 @@ These are the instructions on how to make a release.
 
 1. Export the version into an environment variable for easier usage.
    Example:
+
    ```shell
    export VERSION=0.0.1
    ```
