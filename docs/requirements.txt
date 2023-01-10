@@ -6,9 +6,12 @@
 #
 --editable .
 
+# jupyterhub-sphinx-theme is based on pydata-sphinx-theme and itself require
+# that theme, myst-parser, sphinx-copybutton, sphinx-opengraph:
+# https://github.com/choldgraf/jupyterhub-sphinx-theme/blob/f97104c11cae55869ddc8394eb83594bd5c7d075/pyproject.toml#L16-L21
+#
+git+https://github.com/choldgraf/jupyterhub-sphinx-theme
+
 autodoc-traits
-myst-parser
-pydata-sphinx-theme
-sphinx
 sphinx-autobuild
-sphinx-copybutton
+sphinxext-rediraffe
