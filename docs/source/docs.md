@@ -2,8 +2,8 @@
 
 # Documentation
 
-This section contains information about documentation practices and standards
-that are usually used across JupyterHub project repositories.
+This section contains information about practices and standards that are usually used
+across JupyterHub project repositories.
 
 ## The recommended `docs` directory structure
 
@@ -14,10 +14,6 @@ The `docs` directory usually has the overall structure described below.
 📦docs
  ┣ 📂source
  ┃ ┣ 📂_static
- ┃ ┃ ┗ 📂images
- ┃ ┃ ┃ ┗ 📂logo
- ┃ ┃ ┃ ┃ ┣ 📜favicon.ico
- ┃ ┃ ┃ ┃ ┗ 📜logo.png
  ┃ ┣ 📜changelog.md
  ┃ ┣ 📜conf.py
  ┃ ┗ 📜index.md

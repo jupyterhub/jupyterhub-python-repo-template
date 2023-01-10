@@ -6,9 +6,15 @@
 #
 --editable .
 
+# autodoc-traits provides sphinx directives to create reference documentation
+# about our traitlet configurable Python classes.
 autodoc-traits
-myst-parser
-pydata-sphinx-theme
-sphinx
+
+# jupyterhub-sphinx-theme is based on pydata-sphinx-theme and itself require
+# that theme, myst-parser, sphinx-copybutton, sphinx-opengraph:
+# https://github.com/jupyterhub/jupyterhub-sphinx-theme/blob/d4071da94ccb40216389c413c04a0bd684dc764d/pyproject.toml#L16-L21
+#
+jupyterhub-sphinx-theme
+
 sphinx-autobuild
-sphinx-copybutton
+sphinxext-rediraffe
