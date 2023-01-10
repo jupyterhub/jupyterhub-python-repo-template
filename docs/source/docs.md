@@ -73,7 +73,11 @@ However, consider changing it in the following cases:
 1. Build the docs locally by running
 
    ```bash
+   # single build
    make html
+
+   # rebuild and refresh the browser on changes
+   make devenv
    ```
 
 1. Checkout the rendered html assets built by the `make` command in the newly generated `docs/_build` directory

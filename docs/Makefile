@@ -1,5 +1,7 @@
 # Minimal makefile for Sphinx documentation
 #
+# Use this file on linux/mac computers by running `make devenv` for example.
+#
 
 # You can set these variables from the command line, and also
 # from the environment for the first two.
@@ -18,3 +20,21 @@ help:
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
+# Manually added commands
+# ----------------------------------------------------------------------------
+
+# For local development:
+# - builds and rebuilds html on changes to source
+# - starts a livereload enabled webserver and opens up a browser
+# 
+devenv:
+	sphinx-autobuild -b html --open-browser "$(SOURCEDIR)" "$(BUILDDIR)/html" $(SPHINXOPTS)
+
+# For local development and CI:
+# - verifies that links are valid
+linkcheck:
+	$(SPHINXBUILD) -b linkcheck "$(SOURCEDIR)" "$(BUILDDIR)/linkcheck" $(SPHINXOPTS)
+	@echo
+	@echo "Link check complete; look for any errors in the above output " \
+	      "or in $(BUILDDIR)/linkcheck/output.txt."
