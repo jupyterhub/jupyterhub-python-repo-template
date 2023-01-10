@@ -16,4 +16,4 @@ command line for details.
 
 ### 1.0.0 - 2022-12-06
 
-([full changelog](https://github.com/jupyterhub/jupyterhub-python-repo-template/compare/1.0.0...1.0.1))
+([full changelog](https://github.com/jupyterhub/jupyterhub-python-repo-template/compare/0.1.0...1.0.0))
