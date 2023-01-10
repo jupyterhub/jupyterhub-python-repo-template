@@ -1,10 +1,12 @@
 (documentation)=
 
 # Documentation
+
 This section contains information about practices and standards that are usually used
 across JupyterHub project repositories.
 
 ## The recommended `docs` directory structure
+
 The `docs` directory contains configuration files that are generally used across the `jupyterhub` organization projects.
 The `docs` directory usually has the overall structure described below.
 
@@ -12,10 +14,6 @@ The `docs` directory usually has the overall structure described below.
 📦docs
  ┣ 📂source
  ┃ ┣ 📂_static
- ┃ ┃ ┗ 📂images
- ┃ ┃ ┃ ┗ 📂logo
- ┃ ┃ ┃ ┃ ┣ 📜favicon.ico
- ┃ ┃ ┃ ┃ ┗ 📜logo.png
  ┃ ┣ 📜changelog.md
  ┃ ┣ 📜conf.py
  ┃ ┗ 📜index.md
@@ -69,8 +67,13 @@ However, consider changing it in the following cases:
 1. Add more static resources, like logos or images to `docs/source/_static`
 
 1. Build the docs locally by running
+
    ```bash
+   # single build
    make html
+
+   # rebuild and refresh the browser on changes
+   make devenv
    ```
 
 1. Checkout the rendered html assets built by the `make` command in the newly generated `docs/_build` directory
