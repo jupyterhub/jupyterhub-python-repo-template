@@ -2,8 +2,8 @@
 
 # Documentation
 
-This section contains information about practices and standards that are usually used
-across JupyterHub project repositories.
+This section contains information about documentation practices and standards
+that are usually used across JupyterHub project repositories.
 
 ## The recommended `docs` directory structure
 
