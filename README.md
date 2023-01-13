@@ -7,7 +7,7 @@
 
 This is a repository that contains a set of example files that, after tailoring, can be used to create GitHub repositories for new JupyterHub Python projects.
 
-*NOTE: The badges above 🔝 can and should also be configured for the new project you intend to create. This will make it be consistent with the rest of the respositories in the [jupyterhub organization](https://github.com/jupyterhub). Just replace any reference to this repository `jupyterhub-python-repo-template` with your project and the proper links the badges should point to.*
+_NOTE: The badges above 🔝 can and should also be configured for the new project you intend to create. This will make it be consistent with the rest of the respositories in the [jupyterhub organization](https://github.com/jupyterhub). Just replace any reference to this repository `jupyterhub-python-repo-template` with your project and the proper links the badges should point to._
 
 ## How to use this repository
 
@@ -23,9 +23,11 @@ You can either:
 - directly copy just the content of the files you want and change them to match your project.
 
 ## 📚 Repository contents
+
 This section describes the various files in this repository and how to modify them for your new project.
 
 ### Files that don't need changes
+
 The files in this list can be used in a new project, just as they are, without changing their content.
 
 - `SECURITY.md`
@@ -33,9 +35,11 @@ The files in this list can be used in a new project, just as they are, without c
 - `CODE-OF-CONDUCT.md`
 
 ### Files that need to be adapted
+
 The files in this section will need to be adapted to match your project's specifics.
 
 #### Files that need straightforward, minimal modifications
+
 The changes that need to be done to the following files should be pretty straighforward,
 as, they should only require project specific additions or removals.
 
@@ -54,7 +58,9 @@ about how to proper adapt this file to your own project.
 Please follow them.
 
 #### The docs directory
+
 TODO
 
 #### The tests directory
+
 TODO

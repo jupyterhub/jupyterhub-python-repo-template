@@ -2,5 +2,4 @@
 TODO: Add a short description of your project here
 """
 
-from ._version import __version__
-
+from ._version import __version__  # noqa
