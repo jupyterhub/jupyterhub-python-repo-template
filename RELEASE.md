@@ -7,17 +7,18 @@
 
 # How to make a release
 
-`jupyterhub-python-repo-template` is a package available on [PyPI][].
+`jupyterhub-python-repo-template` is a package available on [PyPI] and
+[conda-forge].
 
 These are the instructions on how to make a release.
 
 ## Pre-requisites
 
-- Push rights to this repo
+- Push rights to this GitHub repository
 
 ## Steps to make a release
 
-1. Create a PR updating `docs/source/changelog.md` with [github-activity][] and
+1. Create a PR updating `docs/source/changelog.md` with [github-activity] and
    continue to step 2 **only when its merged.**
 
    Tips about getting the most out of github-activity (from https://github.com/jupyterhub/team-compass/issues/563):
@@ -46,7 +47,7 @@ These are the instructions on how to make a release.
    - [ ] Make a commit with a message similar to _"Add changelog for 1.2.3"_ and open a PR titled the same
    - [ ] Await merge, then move on to step 2 described below
 
-1. Checkout main and make sure it is up to date.
+2. Checkout main and make sure it is up to date.
 
    ```shell
    git checkout main
@@ -54,37 +55,45 @@ These are the instructions on how to make a release.
    git reset --hard origin/main
    ```
 
-1. Export the version into an environment variable for easier usage.
-   Example:
-
-   ```shell
-   export VERSION=0.0.1
-   ```
-
-1. Update the version, make commits, and push a git tag with `tbump`.
+3. Update the version, make commits, and push a git tag with `tbump`.
 
    ```shell
    pip install tbump
-   tbump --dry-run ${VERSION}
+   ```
 
-   # run
+   ```shell
+   # Example versions to set: 1.0.0, 1.0.0b1
+   VERSION=
+
+   tbump --dry-run ${VERSION}
+   ```
+
+   ```shell
    tbump ${VERSION}
    ```
 
-   Following this, the [CI system][] will build and publish a release.
+   Following this, the [CI system] will build and publish a release.
 
-1. Reset the version back to dev, e.g. `2.0.1.dev0` after releasing `2.0.0`.
+4. Reset the version back to dev, e.g. `1.0.1.dev` after releasing `1.0.0`.
 
    ```shell
-   tbump --no-tag ${NEXT_VERSION}.dev0
+   # Example version to set: 1.0.1.dev
+   NEXT_VERSION=
+
+   tbump --dry-run --no-tag ${NEXT_VERSION}.dev
    ```
 
-1. Following the release to PyPI, an automated PR should arrive to
-   [conda-forge/jupyterhub-kubespawner-feedstock][] with instructions.
+   ```shell
+   tbump --no-tag ${NEXT_VERSION}.dev
+   ```
+
+5. Following the release to PyPI, an automated PR should arrive within 24 hours
+   to [conda-forge/jupyterhub-python-repo-template-feedstock] with instructions
+   on releasing to conda-forge. You are welcome to volunteer doing this, but
+   aren't required as part of making this release to PyPI.
 
 [github-activity]: https://github.com/executablebooks/github-activity
-[github.com/jupyterhub/kubespawner]: https://github.com/jupyterhub/kubespawner
-[pypi]: https://pypi.org/project/jupyterhub-kubespawner/
-[conda-forge]: https://anaconda.org/conda-forge/jupyterhub-kubespawner
-[conda-forge/jupyterhub-kubespawner-feedstock]: https://github.com/conda-forge/jupyterhub-kubespawner-feedstock
-[ci system]: https://github.com/jupyterhub/kubespawner/actions/workflows/publish.yaml
+[pypi]: https://pypi.org/project/jupyterhub-python-repo-template/
+[conda-forge]: https://anaconda.org/conda-forge/jupyterhub-python-repo-template
+[conda-forge/jupyterhub-python-repo-template-feedstock]: https://github.com/conda-forge/jupyterhub-python-repo-template-feedstock
+[ci system]: https://github.com/jupyterhub/jupyterhub-python-repo-template/actions/workflows/release.yaml
