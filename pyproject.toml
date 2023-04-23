@@ -105,8 +105,7 @@ profile = "black"
 [tool.pytest.ini_options]
 addopts = "--verbose --color=yes --durations=10"
 asyncio_mode = "auto"
-# Ignore thousands of tests in dependencies installed in a virtual environment
-norecursedirs = "lib lib64"
+testpaths = ["tests"]
 
 
 # tbump is used to simplify and standardize the release process when updating
