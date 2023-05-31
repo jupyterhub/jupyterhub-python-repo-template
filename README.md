@@ -4,8 +4,8 @@
 [![Latest conda-forge version](https://img.shields.io/conda/vn/conda-forge/jupyterhub-python-repo-template?logo=conda-forge)](https://anaconda.org/conda-forge/jupyterhub-python-repo-template)
 [![GitHub Workflow Status - Test](https://img.shields.io/github/actions/workflow/status/jupyterhub/jupyterhub-python-repo-template/test.yaml?logo=github&label=tests)](https://github.com/jupyterhub/jupyterhub-python-repo-template/actions)
 [![Test coverage of code](https://codecov.io/gh/jupyterhub/jupyterhub-python-repo-template/branch/main/graph/badge.svg)](https://codecov.io/gh/jupyterhub/jupyterhub-python-repo-template)
-[![GitHub](https://img.shields.io/badge/issue_tracking-github-blue?logo=github)](https://github.com/jupyterhub/jupyterhub-python-repo-template/issues)
-[![Discourse](https://img.shields.io/badge/help_forum-discourse-blue?logo=discourse)](https://discourse.jupyter.org/c/jupyterhub)
+[![Issue tracking - GitHub](https://img.shields.io/badge/issue_tracking-github-blue?logo=github)](https://github.com/jupyterhub/jupyterhub-python-repo-template/issues)
+[![Help forum - Discourse](https://img.shields.io/badge/help_forum-discourse-blue?logo=discourse)](https://discourse.jupyter.org/c/jupyterhub)
 
 This is a repository that contains a set of example files that, after tailoring, can be used to create GitHub repositories for new JupyterHub Python projects.
 
