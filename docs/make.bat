@@ -14,7 +14,6 @@ set BUILDDIR=_build
 
 if "%1" == "" goto help
 if "%1" == "devenv" goto devenv
-if "%1" == "linkcheck" goto linkcheck
 goto default
 
 
@@ -42,14 +41,6 @@ if errorlevel 9009 (
 	exit /b 1
 )
 sphinx-autobuild -b html --open-browser "%SOURCEDIR%" "%BUILDDIR%/html" %SPHINXOPTS%
-goto end
-
-
-:linkcheck
-%SPHINXBUILD% -b linkcheck "%SOURCEDIR%" "%BUILDDIR%/linkcheck" %SPHINXOPTS%
-echo.
-echo.Link check complete; look for any errors in the above output
-echo.or in "%BUILDDIR%/linkcheck/output.txt".
 goto end
 
 

@@ -30,11 +30,3 @@ help:
 # 
 devenv:
 	sphinx-autobuild -b html --open-browser "$(SOURCEDIR)" "$(BUILDDIR)/html" $(SPHINXOPTS)
-
-# For local development and CI:
-# - verifies that links are valid
-linkcheck:
-	$(SPHINXBUILD) -b linkcheck "$(SOURCEDIR)" "$(BUILDDIR)/linkcheck" $(SPHINXOPTS)
-	@echo
-	@echo "Link check complete; look for any errors in the above output " \
-	      "or in $(BUILDDIR)/linkcheck/output.txt."
