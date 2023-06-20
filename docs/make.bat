@@ -1,10 +1,18 @@
 @ECHO OFF
 
+REM A file declaring commands for working with the Sphinx based documentation.
+REM
+REM Used on windows computers from a terminal like
+REM
+REM   make.bat <buildername>
+REM
+REM <buildername> should be recognized by "sphinx-build -M <buildername>" or via
+REM manually added commands in this file.
+REM
+REM ref: https://www.sphinx-doc.org/en/master/man/sphinx-build.html#options
+REM
+
 pushd %~dp0
-
-REM Minimal command file for Sphinx documentation
-
-REM Use this file on windows computers by running `make.bat devenv` for example.
 
 if "%SPHINXBUILD%" == "" (
 	set SPHINXBUILD=sphinx-build
@@ -17,29 +25,17 @@ if "%1" == "devenv" goto devenv
 goto default
 
 
-:default
-%SPHINXBUILD% >NUL 2>NUL
-if errorlevel 9009 (
-	echo.
-	echo.The 'sphinx-build' command was not found. Open and read README.md!
-	exit /b 1
-)
-%SPHINXBUILD% -M %1 "%SOURCEDIR%" "%BUILDDIR%" %SPHINXOPTS%
-goto end
-
-
 :help
 %SPHINXBUILD% -M help "%SOURCEDIR%" "%BUILDDIR%" %SPHINXOPTS%
 goto end
 
 
+:default
+%SPHINXBUILD% -M %1 "%SOURCEDIR%" "%BUILDDIR%" %SPHINXOPTS%
+goto end
+
+
 :devenv
-sphinx-autobuild >NUL 2>NUL
-if errorlevel 9009 (
-	echo.
-	echo.The 'sphinx-autobuild' command was not found. Open and read README.md!
-	exit /b 1
-)
 sphinx-autobuild -b html --open-browser "%SOURCEDIR%" "%BUILDDIR%/html" %SPHINXOPTS%
 goto end
 
