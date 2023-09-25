@@ -19,10 +19,10 @@ These are the instructions on how to make a release.
 ## Steps to make a release
 
 1. Create a PR updating `docs/source/changelog.md` with [github-activity] and
-   continue when its merged.
+   continue when its merged. For details about this, see the [team-compass
+   documentation] about it.
 
-   Advice on this procedure can be found in [this team compass
-   issue](https://github.com/jupyterhub/team-compass/issues/563).
+   [team-compass documentation]: https://jupyterhub-team-compass.readthedocs.io/en/latest/practices/releases.html
 
 2. Checkout main and make sure it is up to date.
 
