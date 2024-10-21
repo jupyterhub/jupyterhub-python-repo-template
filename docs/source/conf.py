@@ -9,6 +9,8 @@
 
 # Configuration file for Sphinx to build our documentation to HTML.
 #
+# Configuration reference: https://www.sphinx-doc.org/en/master/usage/configuration.html
+#
 import datetime
 
 # -- Project information -----------------------------------------------------
