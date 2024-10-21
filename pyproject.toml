@@ -79,7 +79,7 @@ remove-unused-variables = true
 # ref: https://black.readthedocs.io/en/stable/
 #
 [tool.black]
-skip-string-normalization = true
+skip-string-normalization = false
 
 
 # isort is used for autoformatting Python code
