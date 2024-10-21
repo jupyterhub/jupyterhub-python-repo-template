@@ -24,7 +24,7 @@ name = "jupyterhub-python-repo-template"
 description = "JupyterHub Python repository template"
 readme = "README.md"
 # TODO: Change the Python version below with the one relevant to your project
-requires-python = ">=3.8"
+requires-python = ">=3.9"
 license = {file = "LICENSE"}
 # TODO: Add more keywords to the list that are relevant to your project
 keywords = ["jupyterhub"]
